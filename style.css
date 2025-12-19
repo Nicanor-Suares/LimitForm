@@ -1,0 +1,214 @@
+    * {
+          box-sizing: border-box;
+          font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+    }
+
+    #app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .progress {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar {
+      height: 4px;
+      background: #333;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .progress-bar span {
+      display: block;
+      height: 100%;
+      background: #fff;
+      transition: width 0.3s ease;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    button.option {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 14px;
+      border-radius: 8px;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    button.option.selected {
+      background: #fff;
+      color: #000;
+    }
+
+    .primary {
+      margin-top: auto;
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 16px;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .character {
+      font-size: 28px;
+      margin: 16px 0;
+    }
+
+    .matches {
+      opacity: 0.8;
+      font-size: 14px;
+    }
+
+    /* Result view character image (larger than home thumbnails) */
+    .character-result {
+      width: 220px;
+      height: 220px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 12px auto;
+    }
+
+    .secondary-list {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .secondary-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .secondary-img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+    }
+
+    .secondary-label {
+      font-size: 12px;
+    }
+
+.home {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+/* Quiz view should fill available space and be a column flex container
+   so the .primary button's margin-top: auto can push it to the bottom. */
+.quiz {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make result view fill available space and be a column flex container
+   so the .primary button (with margin-top: auto) is pushed to the bottom. */
+.result {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  border: 2px solid #fff;
+  border-radius: 14px;
+  padding: 10px 24px;
+  font-weight: 700;
+    font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.characters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.characters img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+h3 {
+    color: darkgrey;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.primary {
+    width: 100%;
+    max-width: 320px;
+    margin-top: auto;
+    align-self: center;
+    margin-bottom: 16px;
+}
+
+.disclaimer {
+  font-size: 1rem;
+  opacity: 0.5;
+  margin-top: 16px;
+}
